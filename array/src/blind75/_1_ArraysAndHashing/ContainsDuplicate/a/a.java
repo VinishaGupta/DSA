@@ -1,5 +1,6 @@
 package blind75._1_ArraysAndHashing.ContainsDuplicate.a;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,7 +8,9 @@ public class a {
     public static void main(String[] args) {
         int[] arr={3,2,1,2,9,2,1};
         int[] arr1={3,2,1};
-        System.out.println(fun2(arr));
+
+        System.out.println(fun3(arr));
+        System.out.println(fun3(arr1));
     }
 
     public static boolean fun(int[] arr){
@@ -31,6 +34,17 @@ public class a {
                 return true;
             }
         }
+        return false;
+    }
+
+    public static boolean fun3(int[] arr){
+        Arrays.sort(arr);
+        for (int i = 1; i < arr.length-1; i++) {
+            if(arr[i]==arr[i-1]){
+                return true;
+            }
+        }
+
         return false;
     }
 }
