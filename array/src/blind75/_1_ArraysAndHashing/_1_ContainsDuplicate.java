@@ -1,10 +1,10 @@
-package blind75._1_ArraysAndHashing.ContainsDuplicate.a;
+package blind75._1_ArraysAndHashing;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class a {
+public class _1_ContainsDuplicate {
     public static void main(String[] args) {
         int[] arr={3,2,1,2,9,2,1};
         int[] arr1={3,2,1};
