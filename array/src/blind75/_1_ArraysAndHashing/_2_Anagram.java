@@ -14,6 +14,10 @@ public class _2_Anagram {
         System.out.println(sortingIntoArray(a,b));
     }
 
+
+    //    Time complexity: O(n)
+//    Space complexity: O(n)
+
     public static boolean usingMaps(String a, String b){
 
         if(a.length()!=b.length()){
@@ -47,6 +51,10 @@ public class _2_Anagram {
 
         return false;
     }
+
+
+    //    Time complexity: O(n)
+//    Space complexity: O(1)
 
 
     public static boolean usingSingleArray(String a,String b){
