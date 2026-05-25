@@ -14,8 +14,8 @@ public class _1_ContainsDuplicate {
     }
 
 
-//    Time complexity:
-//    Space complexity:
+//    Time complexity: O(n)
+//    Space complexity: O(n)
 
     public static boolean fun(int[] arr){
         Set<Integer> set=new HashSet<>();
