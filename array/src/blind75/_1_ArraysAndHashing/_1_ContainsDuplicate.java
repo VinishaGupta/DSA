@@ -44,11 +44,12 @@ public class _1_ContainsDuplicate {
         return false;
     }
 
-
+//    Time complexity: O(n log n)
+//    Space complexity: O(1)
 
     public static boolean fun3(int[] arr){
         Arrays.sort(arr);
-        for (int i = 1; i < arr.length-1; i++) {
+        for (int i = 1; i < arr.length; i++) {
             if(arr[i]==arr[i-1]){
                 return true;
             }
