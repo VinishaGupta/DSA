@@ -1,5 +1,6 @@
 package blind75._1_ArraysAndHashing;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,8 +10,8 @@ public class _2_Anagram {
         String b = "act";
         String c = "abcd";
 
-        System.out.println(usingSingleArray(a,c));
-        System.out.println(usingSingleArray(a,b));
+        System.out.println(sortingIntoArray(a,c));
+        System.out.println(sortingIntoArray(a,b));
     }
 
     public static boolean usingMaps(String a, String b){
@@ -67,6 +68,30 @@ public class _2_Anagram {
         }
 
         return true;
+    }
+
+
+    public static boolean sortingIntoArray(String a, String b){
+
+        if(a.length()!=b.length()){
+            return false;
+        }
+
+        char[] arr1=a.toCharArray();
+        char[] arr2=b.toCharArray();
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i]!=arr2[i]){
+                return false;
+            }
+        }
+
+
+        return true;
+
     }
 
 
