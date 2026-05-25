@@ -30,6 +30,9 @@ public class _1_ContainsDuplicate {
         return false;
     }
 
+    //    Time complexity: O(n)
+    //    Space complexity: O(n)
+
     public static boolean fun2(int[] arr){
         Set<Integer> set=new HashSet<>();
         for(int num: arr){
@@ -40,6 +43,8 @@ public class _1_ContainsDuplicate {
         }
         return false;
     }
+
+
 
     public static boolean fun3(int[] arr){
         Arrays.sort(arr);
