@@ -13,6 +13,10 @@ public class _1_ContainsDuplicate {
         System.out.println(fun3(arr1));
     }
 
+
+//    Time complexity:
+//    Space complexity:
+
     public static boolean fun(int[] arr){
         Set<Integer> set=new HashSet<>();
         for(int num:arr){
