@@ -9,8 +9,8 @@ public class _3_TwoSum {
         System.out.println(Arrays.toString(twoLoops(arr,target)));
     }
 
-//    //    Time complexity: O(n^2)
-////    Space complexity: O(1)
+//    Time complexity: O(n^2)
+//    Space complexity: O(1)
 
     public static int[] twoLoops(int[] arr,int target){
         for (int i = 0; i < arr.length; i++) {
@@ -18,6 +18,29 @@ public class _3_TwoSum {
                 if(arr[i]+arr[j]==target){
                     return new int[]{i,j};
                 }
+            }
+        }
+
+        return new int[]{-1,-1};
+    }
+
+    //    Time complexity: O(n log n)
+//    Space complexity: O(log n)
+
+
+    public static int[] sortingTwoPointers(int[] arr,int target){
+        Arrays.sort(arr);
+        int i=0;
+        int j=arr.length-1;
+
+        while(i<j){
+            int a=arr[i]+arr[j];
+            if(a==target){
+                return new int[]{i,j};
+            } else if (a<target) {
+                i++;
+            } else{
+                j--;
             }
         }
 
