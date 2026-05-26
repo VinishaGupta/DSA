@@ -1,6 +1,7 @@
 package blind75._1_ArraysAndHashing;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class _3_TwoSum {
     public static void main(String[] args) {
@@ -45,5 +46,12 @@ public class _3_TwoSum {
         }
 
         return new int[]{-1,-1};
+    }
+
+
+    public static int[] usingHashmap(int[] arr,int target){
+        HashMap<Integer,Integer> map=new HashMap<>();
+
+
     }
 }
