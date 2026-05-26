@@ -7,7 +7,10 @@ public class _3_TwoSum {
     public static void main(String[] args) {
         int[] arr={2,7,9,19};
         int target=78;
-        System.out.println(Arrays.toString(twoLoops(arr,target)));
+        System.out.println(Arrays.toString(sortingTwoPointers(arr,9)));
+        System.out.println(Arrays.toString(sortingTwoPointers(arr,75)));
+
+
     }
 
 //    Time complexity: O(n^2)
@@ -49,9 +52,21 @@ public class _3_TwoSum {
     }
 
 
+//    Time complexity: O(n)
+//    Space complexity: O(n)
+
     public static int[] usingHashmap(int[] arr,int target){
         HashMap<Integer,Integer> map=new HashMap<>();
 
+        for (int i = 0; i < arr.length; i++) {
+            int complement=target-arr[i];
+            if(map.containsKey(complement)){
+                return new int[]{map.get(complement),i};
+            }
 
+            map.put(arr[i],i);
+        }
+
+        return new int[]{-1,-1};
     }
 }
