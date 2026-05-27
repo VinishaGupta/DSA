@@ -22,7 +22,7 @@ public class _4_GroupAnagrams {
             String st=new String(ch);
 
             if(!map.containsKey(st)){
-                map.put(st,new ArrayList<>(){});
+                map.put(st,new ArrayList<>());
             }
 
             map.get(st).add(str);
