@@ -14,7 +14,7 @@ public class _4_GroupAnagrams {
     //    Time complexity: O(n * k log k)
     //    Space complexity: O(n * k)
 
-    private static List<List<String>> fun(String[] arr) {
+    public static List<List<String>> fun(String[] arr) {
 
         HashMap<String,List<String>> map=new HashMap<>();
 
