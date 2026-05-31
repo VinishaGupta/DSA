@@ -44,6 +44,11 @@ public class _7_ProductOfArrayExceptItself {
     public static int[] whileLoop(int[] arr){
         int[] a=new int[arr.length];
 
+        int i=0;
+        int j=0;
+        int k=arr.length-1;
+
+        while ()
 
         return a;
     }
