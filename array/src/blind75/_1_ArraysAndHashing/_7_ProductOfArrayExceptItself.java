@@ -29,6 +29,10 @@ public class _7_ProductOfArrayExceptItself {
         return b;
     }
 
+
+    //    Time complexity: O(n^2)
+    //    Space complexity: O(n * k)
+
     public static int[] doubleLoop(int[] arr){
         int[] a=new int[arr.length];
 
@@ -44,6 +48,8 @@ public class _7_ProductOfArrayExceptItself {
         return a;
     }
 
+
+//    wont work
     public static int[] whileLoop(int[] arr){
         int[] a=new int[arr.length];
 
