@@ -10,6 +10,9 @@ public class _7_ProductOfArrayExceptItself {
         System.out.println(Arrays.toString(doubleLoop(arr)));
     }
 
+    //    Time complexity: O(n)
+    //    Space complexity: O(n)
+
     public static int[] divide(int[] arr){
 
         int[] b=new int[arr.length];
