@@ -40,4 +40,19 @@ public class _7_ProductOfArrayExceptItself {
         }
         return a;
     }
+
+    public static int[] whileLoop(int[] arr){
+        int[] a=new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            int b=1;
+            for (int j = 0; j < arr.length; j++) {
+                if(i!=j){
+                    b*=arr[j];
+                }
+            }
+            a[i]=b;
+        }
+        return a;
+    }
 }
