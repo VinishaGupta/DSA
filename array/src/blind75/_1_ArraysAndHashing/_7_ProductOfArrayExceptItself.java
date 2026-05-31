@@ -50,18 +50,34 @@ public class _7_ProductOfArrayExceptItself {
 
 
 //    wont work
-    public static int[] whileLoop(int[] arr){
+//    public static int[] whileLoop(int[] arr){
+//        int[] a=new int[arr.length];
+//
+//        int i=0;
+//        int j=0;
+//        int k=arr.length-1;
+//        int b=1;
+//
+//        while (j<i && k>i){
+//            b*=arr[i]
+//        }
+//
+//        return a;
+//    }
+
+
+    public static int[] SuffixPrefixProduct(int[] arr){
         int[] a=new int[arr.length];
 
-        int i=0;
-        int j=0;
-        int k=arr.length-1;
-        int b=1;
-
-        while (j<i && k>i){
-            b*=arr[i]
+        for (int i = 0; i < arr.length; i++) {
+            int b=1;
+            for (int j = 0; j < arr.length; j++) {
+                if(i!=j){
+                    b*=arr[j];
+                }
+            }
+            a[i]=b;
         }
-
         return a;
     }
 }
