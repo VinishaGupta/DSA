@@ -47,8 +47,11 @@ public class _7_ProductOfArrayExceptItself {
         int i=0;
         int j=0;
         int k=arr.length-1;
+        int b=1;
 
-        while ()
+        while (j<i && k>i){
+            b*=arr[i]
+        }
 
         return a;
     }
