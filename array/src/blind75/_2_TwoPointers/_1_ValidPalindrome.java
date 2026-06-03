@@ -9,6 +9,11 @@ public class _1_ValidPalindrome {
         System.out.println(fun(str2));
     }
 
+
+    //    Time complexity: O(n])
+    //    Space complexity: O(n)
+
+
     public static boolean fun(String str){
         int i=0;
         int j=str.length()-1;
@@ -28,7 +33,8 @@ public class _1_ValidPalindrome {
                 return false;
             }
 
-
+            i++;
+            j--;
 
         }
 
