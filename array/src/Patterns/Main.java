@@ -2,7 +2,7 @@ package Patterns;
 
 public class Main {
     public static void main(String[] args) {
-        pattern9(5);
+        pattern10(5);
     }
 
     public static void pattern1(int n){
@@ -123,6 +123,24 @@ public class Main {
             System.out.println();
         }
     }
+
+    public static void pattern10(int n){
+        int start=1;
+        for (int i = 1; i < n; i++) {
+           if(i%2==0){
+               start=0;
+           } else {
+               start=1;
+           }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(start);
+                start=1-start;
+            }
+            System.out.println();
+        }
+    }
+
+
 
 }
 
