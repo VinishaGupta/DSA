@@ -174,7 +174,7 @@ public class Main {
                 System.out.print(ch+ " ");
                 ch+=1;
             }
-            System.out.println();
+            System.out.println()
         }
     }
 
