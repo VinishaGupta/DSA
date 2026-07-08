@@ -2,7 +2,7 @@ package Patterns;
 
 public class Main {
     public static void main(String[] args) {
-        pattern10(5);
+        pattern11(5);
     }
 
     public static void pattern1(int n){
@@ -135,6 +135,21 @@ public class Main {
             for (int j = 1; j <= i; j++) {
                 System.out.print(start);
                 start=1-start;
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern11(int n){
+        for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <=i; j++) {
+                System.out.print(j);
+            }
+            for (int j = 1; j <=2*n-2*i; j++) {
+                System.out.print(' ');
+            }
+            for (int j = i; j >0; j--) {
+                System.out.print(j);
             }
             System.out.println();
         }
